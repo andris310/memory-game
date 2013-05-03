@@ -5,27 +5,49 @@
 
 table {
 	display: block;
-	width: 200px;
+	width: 400px;
 	border: 1px solid black;
   clear: both;
 }
 
 td {
-	width: 50px;
-	height: 50px;
+	width: 90px;
+	height: 70px;
 	border: 1px solid black;
 	padding: 5px;
   font-size: 30px;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #reset {
   float: left;
+  margin-bottom: 20px;
 }
 
 #timer {
-  float: left;
+  float: right;
+  color: green;
+  font-size: 20px;
 }
+
+#win {
+  position: relative;
+  top: 120px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF5200;
+}
+
+#win span {
+  width: 200px;
+  height: 30px;
+  font-size: 32px;
+  left: 50px;
+  position: absolute;
+  text-shadow: 2px 2px 2px #FFF, 0 2px 18px #808080;
+}
+
 
 .hidden {
 	display: none;
@@ -33,4 +55,9 @@ td {
 
 .match {
   color: green;
+  text-shadow: 2px 2px 2px #D3D3D3;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
