@@ -19,15 +19,17 @@ $(document).ready(function() {
   $('#reset').on('click', function() {
     $('span').removeClass('match');
     $('span').addClass('hidden');
+    $('#timer').css('color', 'green');
     timeStart.call();
     click.call();
   });
 
 // ----------- timer -------------
+  var counter = 0;
 
   function timeStart() {
     var count = 0;
-    var counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 1000);
     function timer(){
     count = count + 1;
 
@@ -77,7 +79,7 @@ $(document).ready(function() {
 
           if($('span').hasClass('hidden') === false){
             $('td').off('click');
-            $('#win').append($('<span>"YOU WIN!!!"</span>'));
+            $('#win').append($('<span>"YOU WON!!!"</span>').fadeIn(1000));
           } else {
             click.call();
         }}

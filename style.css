@@ -15,16 +15,18 @@ h2 {
 table {
 	display: block;
 	width: 400px;
-	border: 1px solid black;
+	border: 1px solid #dddddd;
   clear: both;
+  border-radius: 4px;
 }
 
 td {
 	width: 90px;
 	height: 70px;
-	border: 1px solid black;
+	border: 1px solid #dddddd;
 	padding: 5px;
   font-size: 30px;
+  color: gray;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
